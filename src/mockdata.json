@@ -1,0 +1,26 @@
+{
+    "propriedades": [
+        {
+            "id": 1,
+            "Título": "Home in Merrick Way",
+            "palavras-chave": [
+                "Loteamento rural"
+            ],
+            "Endereço": "",
+            "status": "200 disponíveis",
+            "$": "540,000",
+            "fotos": [],
+            "features": {
+                "Área": "1000m2",
+                "Escritura individual": true
+            },
+            "descrição": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet fermentum fermentum. Vivamus ut erat id lacus ultrices sodales. Praesent scelerisque vulputate nisi. Nunc eleifend, nunc sed ornare elementum, dolor eros pharetra risus, sed malesuada dui orci eu erat. Proin tempor quis lorem et lobortis. Mauris tincidunt elementum est. Nulla ultrices dolor sagittis ex sollicitudin, lacinia commodo ipsum mollis. Vestibulum semper, arcu nec ultrices vestibulum, arcu lectus egestas purus, sit amet porttitor dolor est eget metus. Morbi at erat vel libero tristique gravida. Nullam ac lectus fermentum, mollis nunc id, posuere ipsum.",
+            "planos": {
+                "a vista": "preco",
+                "entrada 1000 12x": "preco",
+                "entrada 1000 24x": "preco",
+                "entrada 1000 36x": "preco"
+            }
+        }
+    ]
+}
