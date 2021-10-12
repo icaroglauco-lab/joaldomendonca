@@ -1,24 +1,50 @@
 <script>
-    import Header from "./componentes/header.svelte";
-    import Footer from "./componentes/footer.svelte";
+    import router from "page"
 
-    import LandingHeader from './componentes/HomeHeader.svelte';
     import { setContext } from "svelte";
     import Data from './mockdata.json';
+    
+    import Header from "./componentes/header.svelte";
+    import Footer from "./componentes/footer.svelte";
+    import LandingHeader from './componentes/HomeHeader.svelte';
 
-    import router from "page"
+    import HomeContent from './contents/home.svelte';
+    import SingleProduct from './contents/singleProduct.svelte';
 
     let mockdata = Data;
 
-    let state = setContext('state', mockdata);
+    console.log(mockdata)
 
-    let page;
+    let header;
+    let content;
 
-    router('/', () => page = LandingHeader)
+    router('/', () => {
+        header = LandingHeader;
+        content = HomeContent;
+    })
+    router('/imovel/:id', (context) => {
+        header = Header;
+        content = SingleProduct;
+        setContext('product data', mockdata.propriedades.find(d => d.id === parseInt(context.params.id)))
+    })
+    
     router.start()
 
 </script>
 
-<svelte:component this={page} />
+<svelte:component this={header} />
+<svelte:component this={content} />
 
 <Footer></Footer>
+
+<style>
+    :global(body){
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    :global(p){
+        color: rgb(75, 75, 75)
+    }
+</style>
