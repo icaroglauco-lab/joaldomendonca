@@ -7,6 +7,9 @@
     import Header from "./componentes/header.svelte";
     import Footer from "./componentes/footer.svelte";
     import LandingHeader from './componentes/HomeHeader.svelte';
+    
+    import Nav from './componentes/nav.svelte';
+    import Buscar from './componentes/buscar.svelte';
 
     import HomeContent from './contents/home.svelte';
     import SingleProductContent from './contents/singleProduct.svelte';
@@ -36,7 +39,11 @@
 
 </script>
 
-<svelte:component this={header} />
+<Nav></Nav>
+
+    <svelte:component this={header} />
+<Buscar/>
+
 <svelte:component this={content} />
 
 <Footer></Footer>
@@ -51,4 +58,5 @@
     :global(p){
         color: rgb(75, 75, 75)
     }
+
 </style>

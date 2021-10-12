@@ -26,7 +26,7 @@
     nav{
         top: 0%;
         width: 100%;
-        position: sticky;
+        position: fixed;
         display: flex;
         flex-direction: row;
         height: 70px;
