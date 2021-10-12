@@ -9,23 +9,27 @@
     import LandingHeader from './componentes/HomeHeader.svelte';
 
     import HomeContent from './contents/home.svelte';
-    import SingleProduct from './contents/singleProduct.svelte';
+    import SingleProductContent from './contents/singleProduct.svelte';
+    import ListagemContent from './contents/listagem.svelte';
 
     let mockdata = Data;
-
-    console.log(mockdata)
 
     let header;
     let content;
 
+    // routes
     router('/', () => {
         header = LandingHeader;
         content = HomeContent;
     })
     router('/imovel/:id', (context) => {
         header = Header;
-        content = SingleProduct;
+        content = SingleProductContent;
         setContext('product data', mockdata.propriedades.find(d => d.id === parseInt(context.params.id)))
+    })
+    router('/busca/', () => {
+        header = Header;
+        content = ListagemContent;
     })
     
     router.start()

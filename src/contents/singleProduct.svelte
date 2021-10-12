@@ -4,6 +4,8 @@
     import { getContext } from 'svelte';
     import ContactTab from "../componentes/productContactTab.svelte";
     // import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons'
+    import IconsLib from "../iconslib.json";
+
     let data = getContext('product data');
 
     let simuladoVezes = 0;
@@ -44,7 +46,16 @@
             <div class='content2'>
                 <div class="features">
                     <h4>Features</h4>
-                    {data["features"]}
+                    <ul class="list-inside">
+                    {#each Object.keys(data["features"]) as featureKey}
+                        <li>
+                            <i class={IconsLib[featureKey]}></i>
+                            {featureKey}
+                            {typeof data["features"][featureKey] !== 'boolean'? `: ${data["features"][featureKey]}`: ""}
+                            <br/>
+                        </li>
+                    {/each}
+                    </ul>
                 </div>
                 <div class="desc">
                     <h4>Descrição</h4>
@@ -54,22 +65,32 @@
                 </div>
                 <div class="adicionais">
                     <h4>Detalhes adicionais</h4>
-                    {data["detalhes adicionais"]}
+                    <ul class="list-inside">
+                    {#each Object.keys(data["detalhes adicionais"]) as detalheKey}
+                        <li>
+                            <span>
+                                {detalheKey}:
+                            </span> 
+                            <span>
+                                {data["detalhes adicionais"][detalheKey]}
+                            </span>
+                        </li>
+                    {/each}
+                    </ul>
                 </div>
                 <div class="planos">
                     <h4>Planos de pagamentos</h4>
-                    <p>
-                        <span>
+                    <ul class="list-inside">
+                        <li>
                             Valor a vista do imóvel: R${data["planos"]["preço a vista"]}
-                        </span>
-                        <br/>
-                        <span>
+                        </li>
+                        <li>
                             Taxa de juros para esse empreendimento: {data["planos"]["juros"] * 100}%
-                        </span>
-                    </p>
+                        </li>
+                    </ul>
 
                     <div class="entrada">
-                        <h5>Simulação:</h5>
+                        <h4>Simulação:</h4>
                         <label for="">Entrada: R$</label> 
                         <input class="entrada" bind:value={entrada} type="number" min="1000">
                     </div>

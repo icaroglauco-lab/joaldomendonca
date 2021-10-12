@@ -39,10 +39,10 @@
             "rank": 2,
             "cliques": 0,
             "titulo": "Lote do empreendimento Rural 2",
-            "status": "200 unidades disponíveis",
+            "status": "Indisponível",
             "palvras-chave": ["rural", "loteamento"],
             "fetures": {
-                "Área": "1000m2",
+                "Área": "2000m2",
                 "Escritura individualizada": true
             },
             "descrição": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet fermentum fermentum. Vivamus ut erat id lacus ultrices sodales. Praesent scelerisque vulputate nisi. Nunc eleifend, nunc sed ornare elementum, dolor eros pharetra risus, sed malesuada dui orci eu erat. Proin tempor quis lorem et lobortis. Mauris tincidunt elementum est. Nulla ultrices dolor sagittis ex sollicitudin, lacinia commodo ipsum mollis. Vestibulum semper, arcu nec ultrices vestibulum, arcu lectus egestas purus, sit amet porttitor dolor est eget metus. Morbi at erat vel libero tristique gravida. Nullam ac lectus fermentum, mollis nunc id, posuere ipsum.",
@@ -65,7 +65,7 @@
                     "4 anos fixos": 48
                 },
                 "juros": 0.2,
-                "preço a vista": 10000
+                "preço a vista": 20000
             }
         }
     ]
