@@ -3,12 +3,17 @@
 
     import Carrousel from "@beyonk/svelte-carousel";
     import FullData from '../mockdata.json';
+    import { onMount } from 'svelte';
 
     let PropriedadesEmDestaque = FullData.propriedades.sort( (a, b) => 
         a.rank - b.rank
     ).slice(0, 5);
 
     console.log(PropriedadesEmDestaque);
+
+    onMount(()=>{
+        gsap.from(".slides", {duration: 1, scale: 0.5})
+    })
 
 </script>
 

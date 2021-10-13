@@ -69,6 +69,10 @@
         background-color: #f7f7f7;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    :global(a){
+        text-decoration: none;
+        color:teal
+    }
     :global(p){
         color: rgb(75, 75, 75)
     }

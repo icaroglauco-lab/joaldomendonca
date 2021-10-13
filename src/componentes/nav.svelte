@@ -18,8 +18,8 @@
     </ul>
     <ul class="contato">
         <li>
-            <i class="fab fa-whatsapp"></i>
-            (xx) xxxx-xxxx
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=777777777777&text=..."><i class="fab fa-whatsapp"></i>
+            (xx) xxxx-xxxx</a>
         </li>
     </ul>
 </nav>
@@ -34,6 +34,7 @@
         height: 70px;
         justify-content: space-between;
         z-index: 100;
+        border-bottom: solid  0.5px rgba(0,0,0,0.05);
         /* background-color: rgba(240, 255, 255, 0.973); */
     }
     ul{

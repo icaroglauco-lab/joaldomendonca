@@ -1,3 +1,12 @@
+<script>
+    import { onMount } from "svelte";
+
+
+    onMount(()=>{
+        gsap.from(".hero", {duration: 2, scale: 0.5})
+    }) 
+</script>
+
 <header>
     <div class="hero">
         <h1>

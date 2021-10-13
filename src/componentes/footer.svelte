@@ -30,7 +30,7 @@
     </div>
     <div class="direitos">
         <div class="ano">@2021. Todos os direitos reservados</div>
-        <div class="creditos">desenvolvido por linkedin/dev-icaroglauco</div>
+        <div class="creditos"><small>desenvolvido por linkedin/dev-icaroglauco</small></div>
     </div>
 </footer>
 
@@ -54,6 +54,9 @@
         grid-gap: 100px;
         padding-left: 60px;
         padding-top: 50px;
+    }
+    .nav li{
+        list-style: square;
     }
     .logo{
         height: 100%;
