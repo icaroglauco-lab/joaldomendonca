@@ -52,7 +52,7 @@
             <SingleProductContent/>
         </Route>
 
-        <Route path="/busca/">
+        <Route path="/busca">
             <Header/>
             <Buscar/>
             <ListagemContent/>

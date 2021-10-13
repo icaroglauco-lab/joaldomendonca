@@ -3,7 +3,7 @@
 
 
     onMount(()=>{
-        gsap.from(".hero", {duration: 2, scale: 0.5})
+        gsap.from(".hero", {duration: 1, x:+300})
     }) 
 </script>
 

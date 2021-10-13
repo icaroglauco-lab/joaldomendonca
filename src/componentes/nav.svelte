@@ -13,7 +13,7 @@
     </a>
     <ul class="links">
         <li><a use:link href="/">Início</a></li>
-        <li><a use:link href="/">Propriedades</a></li>
+        <li><a href="/busca">Propriedades</a></li>
         <li><a use:link href="/">Contato</a></li>    
     </ul>
     <ul class="contato">

@@ -32,8 +32,16 @@
 <style>
     :global(.slides){
     }
+    :global(.hero){
+        min-height: 5vh;
+    }
     .slide-content{
         width: fit-content;
         margin: 0 auto;
+    }
+    h4{
+        padding: 1vh;
+        text-align: center;
+        font-size: 20pt;
     }
 </style>

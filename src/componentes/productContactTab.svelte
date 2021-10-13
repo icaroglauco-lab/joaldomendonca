@@ -45,12 +45,14 @@
                 Enviar por mensagem
             </span>
         </span>
+        <a href={`https://api.whatsapp.com/send?phone=777777777777&text=Olá, estou interessado em saber mais sobre a propriedade ${data['titulo']} na localidade ${data['endereço']}`}>
         <span class="whatsapp">
-            <i class="fab fa-whatsapp"></i>
-            <span>
-                Enviar por whatsapp
+                <i class="fab fa-whatsapp"></i>
+                <span>
+                    Enviar por whatsapp
+                </span>
             </span>
-        </span>
+        </a>
     </div>
 </div>
 
