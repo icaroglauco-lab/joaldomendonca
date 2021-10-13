@@ -1,12 +1,16 @@
 <script>
     // precisa levar o imovei como parametro para a pagina, nesse caso, estou começando com um mock
     import Carousel from '@beyonk/svelte-carousel'
-    import { getContext } from 'svelte';
     import ContactTab from "../componentes/productContactTab.svelte";
     // import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons'
     import IconsLib from "../iconslib.json";
+    import FullData from '../mockdata.json';
 
-    let data = getContext('product data');
+    import { useParams } from "svelte-navigator";
+
+	const params = useParams();
+    $: data = FullData.propriedades.find(d => d.id === parseInt($params.id));
+    console.log(data, FullData.propriedades, parseInt($params.id), FullData.propriedades.find(d => d.id === parseInt($params.id)));
 
     let simuladoVezes = 0;
     let entrada = 1000;
@@ -14,8 +18,8 @@
 </script>
 
 <!-- é apenas o conteudo da pagina, excluindo footer , barra de pesquisa e header geral -->
-
-<div class="container">
+{#if data}
+<div class="container productPage">
     <div class="title">
         <h2 class="titulo">
             {data.titulo}
@@ -111,6 +115,8 @@
         <ContactTab data={data}/>
     </div>
 </div>
+{/if}
+
 
 
 
@@ -131,7 +137,7 @@
         margin: 0 auto;
     }
 
-    :global(.carousel){
+    :global(.productPage .carousel){
         border: 2px solid #eaeaea
     }
 

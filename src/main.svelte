@@ -1,7 +1,7 @@
 <script>
-    import router from "page"
+    // @ts-ignore
+    import { Router, Route } from "svelte-navigator";
 
-    import { setContext } from "svelte";
     import Data from './mockdata.json';
     
     import Header from "./componentes/header.svelte";
@@ -15,36 +15,50 @@
     import SingleProductContent from './contents/singleProduct.svelte';
     import ListagemContent from './contents/listagem.svelte';
 
-    let mockdata = Data;
+    // let header;
+    // let content;
 
-    let header;
-    let content;
-
-    // routes
-    router('/', () => {
-        header = LandingHeader;
-        content = HomeContent;
-    })
-    router('/imovel/:id', (context) => {
-        header = Header;
-        content = SingleProductContent;
-        setContext('product data', mockdata.propriedades.find(d => d.id === parseInt(context.params.id)))
-    })
-    router('/busca/', () => {
-        header = Header;
-        content = ListagemContent;
-    })
+    // // routes
+    // router('/', () => {
+    //     header = LandingHeader;
+    //     content = HomeContent;
+    // })
+    // router('/imovel/:id', (context) => {
+    //     header = Header;
+    //     content = SingleProductContent;
+    //     setContext('product data', mockdata.propriedades.find(d => d.id === parseInt(context.params.id)))
+    // })
+    // router('/busca/', () => {
+    //     header = Header;
+    //     content = ListagemContent;
+    // })
     
-    router.start()
+    // router.start()
 
 </script>
 
-<Nav></Nav>
+<Router>
 
-    <svelte:component this={header} />
-<Buscar/>
+    <Nav></Nav>
 
-<svelte:component this={content} />
+        <Route path="/">
+            <LandingHeader/>
+            <Buscar/>
+            <HomeContent/>
+        </Route>
+        <Route path="/imovel/:id">
+            <Header/>
+            <Buscar/>
+            <SingleProductContent/>
+        </Route>
+
+        <Route path="/busca/">
+            <Header/>
+            <Buscar/>
+            <ListagemContent/>
+        </Route>
+
+</Router>
 
 <Footer></Footer>
 

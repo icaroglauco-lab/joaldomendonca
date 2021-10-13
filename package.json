@@ -24,6 +24,7 @@
     "firebase": "^9.1.2",
     "page": "^1.11.6",
     "svelte-fa": "^2.3.3",
-    "svelte-feather-icons": "^3.5.0"
+    "svelte-feather-icons": "^3.5.0",
+    "svelte-navigator": "^3.1.5"
   }
 }

@@ -40,8 +40,144 @@
             "cliques": 0,
             "titulo": "Lote do empreendimento Rural 2",
             "status": "Indisponível",
-            "palvras-chave": ["rural", "loteamento"],
-            "fetures": {
+            "palavras-chave": ["rural", "loteamento"],
+            "features": {
+                "Área": "2000m2",
+                "Escritura individualizada": true
+            },
+            "descrição": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet fermentum fermentum. Vivamus ut erat id lacus ultrices sodales. Praesent scelerisque vulputate nisi. Nunc eleifend, nunc sed ornare elementum, dolor eros pharetra risus, sed malesuada dui orci eu erat. Proin tempor quis lorem et lobortis. Mauris tincidunt elementum est. Nulla ultrices dolor sagittis ex sollicitudin, lacinia commodo ipsum mollis. Vestibulum semper, arcu nec ultrices vestibulum, arcu lectus egestas purus, sit amet porttitor dolor est eget metus. Morbi at erat vel libero tristique gravida. Nullam ac lectus fermentum, mollis nunc id, posuere ipsum.",
+            "detalhes adicionais": {
+                "Vista": "Para cidade",
+                "Entradas": "Duas, pela cidade, e por dentro"
+            },
+            "endereço": "São Sebastião, Vitória da Conquista - BA",
+            "log lat": [-14.8520298,-40.7198707],
+            "fotos": [
+                "https://media.istockphoto.com/photos/home-tax-deduction-picture-id1270111816",
+                "https://media.istockphoto.com/photos/aerial-view-of-residential-houses-at-autumn-american-neighborhood-picture-id1181134074",
+                "https://media.istockphoto.com/photos/modern-houses-from-above-picture-id1255099614"
+            ],
+            "planos": {
+                "termos": {
+                    "1 ano fixo": 12,
+                    "2 anos fixos": 24,
+                    "3 anos fixos": 36,
+                    "4 anos fixos": 48
+                },
+                "juros": 0.2,
+                "preço a vista": 20000
+            }
+        },
+        {
+            "id": 7,
+            "rank": 2,
+            "cliques": 0,
+            "titulo": "Lote do empreendimento Rural 2",
+            "status": "Indisponível",
+            "palavras-chave": ["rural", "loteamento"],
+            "features": {
+                "Área": "2000m2",
+                "Escritura individualizada": true
+            },
+            "descrição": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet fermentum fermentum. Vivamus ut erat id lacus ultrices sodales. Praesent scelerisque vulputate nisi. Nunc eleifend, nunc sed ornare elementum, dolor eros pharetra risus, sed malesuada dui orci eu erat. Proin tempor quis lorem et lobortis. Mauris tincidunt elementum est. Nulla ultrices dolor sagittis ex sollicitudin, lacinia commodo ipsum mollis. Vestibulum semper, arcu nec ultrices vestibulum, arcu lectus egestas purus, sit amet porttitor dolor est eget metus. Morbi at erat vel libero tristique gravida. Nullam ac lectus fermentum, mollis nunc id, posuere ipsum.",
+            "detalhes adicionais": {
+                "Vista": "Para cidade",
+                "Entradas": "Duas, pela cidade, e por dentro"
+            },
+            "endereço": "São Sebastião, Vitória da Conquista - BA",
+            "log lat": [-14.8520298,-40.7198707],
+            "fotos": [
+                "https://media.istockphoto.com/photos/home-tax-deduction-picture-id1270111816",
+                "https://media.istockphoto.com/photos/aerial-view-of-residential-houses-at-autumn-american-neighborhood-picture-id1181134074",
+                "https://media.istockphoto.com/photos/modern-houses-from-above-picture-id1255099614"
+            ],
+            "planos": {
+                "termos": {
+                    "1 ano fixo": 12,
+                    "2 anos fixos": 24,
+                    "3 anos fixos": 36,
+                    "4 anos fixos": 48
+                },
+                "juros": 0.2,
+                "preço a vista": 20000
+            }
+        },
+        {
+            "id": 3,
+            "rank": 2,
+            "cliques": 0,
+            "titulo": "Lote do empreendimento Rural 2",
+            "status": "Indisponível",
+            "palavras-chave": ["rural", "loteamento"],
+            "features": {
+                "Área": "2000m2",
+                "Escritura individualizada": true
+            },
+            "descrição": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet fermentum fermentum. Vivamus ut erat id lacus ultrices sodales. Praesent scelerisque vulputate nisi. Nunc eleifend, nunc sed ornare elementum, dolor eros pharetra risus, sed malesuada dui orci eu erat. Proin tempor quis lorem et lobortis. Mauris tincidunt elementum est. Nulla ultrices dolor sagittis ex sollicitudin, lacinia commodo ipsum mollis. Vestibulum semper, arcu nec ultrices vestibulum, arcu lectus egestas purus, sit amet porttitor dolor est eget metus. Morbi at erat vel libero tristique gravida. Nullam ac lectus fermentum, mollis nunc id, posuere ipsum.",
+            "detalhes adicionais": {
+                "Vista": "Para cidade",
+                "Entradas": "Duas, pela cidade, e por dentro"
+            },
+            "endereço": "São Sebastião, Vitória da Conquista - BA",
+            "log lat": [-14.8520298,-40.7198707],
+            "fotos": [
+                "https://media.istockphoto.com/photos/home-tax-deduction-picture-id1270111816",
+                "https://media.istockphoto.com/photos/aerial-view-of-residential-houses-at-autumn-american-neighborhood-picture-id1181134074",
+                "https://media.istockphoto.com/photos/modern-houses-from-above-picture-id1255099614"
+            ],
+            "planos": {
+                "termos": {
+                    "1 ano fixo": 12,
+                    "2 anos fixos": 24,
+                    "3 anos fixos": 36,
+                    "4 anos fixos": 48
+                },
+                "juros": 0.2,
+                "preço a vista": 20000
+            }
+        },
+        {
+            "id": 4,
+            "rank": 2,
+            "cliques": 0,
+            "titulo": "Lote do empreendimento Rural 2",
+            "status": "Indisponível",
+            "palavras-chave": ["rural", "loteamento"],
+            "features": {
+                "Área": "2000m2",
+                "Escritura individualizada": true
+            },
+            "descrição": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet fermentum fermentum. Vivamus ut erat id lacus ultrices sodales. Praesent scelerisque vulputate nisi. Nunc eleifend, nunc sed ornare elementum, dolor eros pharetra risus, sed malesuada dui orci eu erat. Proin tempor quis lorem et lobortis. Mauris tincidunt elementum est. Nulla ultrices dolor sagittis ex sollicitudin, lacinia commodo ipsum mollis. Vestibulum semper, arcu nec ultrices vestibulum, arcu lectus egestas purus, sit amet porttitor dolor est eget metus. Morbi at erat vel libero tristique gravida. Nullam ac lectus fermentum, mollis nunc id, posuere ipsum.",
+            "detalhes adicionais": {
+                "Vista": "Para cidade",
+                "Entradas": "Duas, pela cidade, e por dentro"
+            },
+            "endereço": "São Sebastião, Vitória da Conquista - BA",
+            "log lat": [-14.8520298,-40.7198707],
+            "fotos": [
+                "https://media.istockphoto.com/photos/home-tax-deduction-picture-id1270111816",
+                "https://media.istockphoto.com/photos/aerial-view-of-residential-houses-at-autumn-american-neighborhood-picture-id1181134074",
+                "https://media.istockphoto.com/photos/modern-houses-from-above-picture-id1255099614"
+            ],
+            "planos": {
+                "termos": {
+                    "1 ano fixo": 12,
+                    "2 anos fixos": 24,
+                    "3 anos fixos": 36,
+                    "4 anos fixos": 48
+                },
+                "juros": 0.2,
+                "preço a vista": 20000
+            }
+        },
+        {
+            "id": 5,
+            "rank": 2,
+            "cliques": 0,
+            "titulo": "Lote do empreendimento Rural 2",
+            "status": "Indisponível",
+            "palavras-chave": ["rural", "loteamento"],
+            "features": {
                 "Área": "2000m2",
                 "Escritura individualizada": true
             },
